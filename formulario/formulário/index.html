@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logon - Cadastramento</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" sizes="" href="imagens/favicon.png">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       <div id="interface">
+           <h2>Recode</h2>
+           <form action="#" method="POST" accept-charset="utf-8">
+                <div>
+                    <label for="txtNome">Nome:</label>
+                    <input type="text" name="campoNome" required placeholder="Digite seu nome" id="txtNome">
+                </div> <!-- Campo do nome -->
+                <div>
+                    <label for="txtSnome">Sobrenome:</label>
+                    <input type="text" name="campoSnome" required placeholder="Digite seu sobrenome" id="txtSnome">
+                </div> <!-- Campo para o sobrenome -->
+                <div>
+                    <label for="txtCompleto">Nome Completo:</label>
+                    <input type="text" name="campoCompleto" placeholder="Digite seu nome completo" id="txtCompleto">
+                </div>
+               <div>
+                    <label for="txtEmail">E-mail:</label>
+                    <input type="email" name="campoEmail" required placeholder="Digite seu e-mail" id="txtEmail">
+                </div> <!-- Campo da so e-mail -->
+                <div>
+                    <label>Selecione seu estado:</label>
+                    <select name="slcEstado">
+                        <option selected disabled>Selecione</option>
+                        <optgroup label="Região Sul">
+                            <option value="rs">Rio Grande do Sul</option>
+                            <option value="sc">Santa Catarina</option>
+                            <option value="pr">Paraná</option>
+                        </optgroup>
+                        <optgroup label="Região Sudeste">
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Mina Geral</option>
+                            <option value="es">Espirito Santos</option>
+                        </optgroup>
+                        <optgroup label="Região Nordeste">
+                            <option value="bh">Bahia</option>
+                            <option value="pe">Pernambuco</option>
+                            <option value="ce">Ceará</option>
+                        </optgroup>
+                    </select> <!-- Caixa de seleção -->
+                </div> <!-- Campo da senha -->
+                <div>
+                    <input type="submit" value="Enviar">
+                </div> <!-- btn lenviar -->
+                <div>
+                    <input type="reset" value="Limpar">
+                </div> <!-- btn limpar -->
+           </form>
+       </div> 
+    </body>
+</html>

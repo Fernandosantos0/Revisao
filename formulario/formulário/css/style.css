@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* Google Fonts */
+
+/* Fonte Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+/* Fonte Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/* ------------------------------------------------------------------------ */
+
+body {
+    background: url(../imagens/fundo.png);
+}
+
+#interface {
+    width: 450px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.548);
+    border-radius: 15px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+#interface h2 {
+    text-align: center;
+    font-size: 2.6em;
+    font-family: 'Lora', serif;
+    color: #128f92;
+}
+
+#interface label {
+    display: block;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+form label {
+    margin-bottom: 5px;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 80%;
+    height: 25px;
+    border: none;
+    font-size: 0.9em;
+    border-radius: 15px;
+    padding-left: 30px;
+}
+
+form input[type="email"] {
+    background: url(../imagens/icone-email.png) no-repeat 5px center;
+}
+
+form input[type="text"] {
+    background: url(../imagens/icone-pessoa.png) no-repeat 5px center;
+}
+
+
+/* Estilizando os botões do formulário */
+form input[type="submit"],
+form input[type="reset"] {
+    width: 80%;
+    height: 39px;
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 19px;
+    font-size: 17px;
+    letter-spacing: 0.2em;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    margin: 0 auto;
+}
+
+form input[type="submit"]:hover ,
+form input[type="reset"]:hover {
+    color: blue;
+    background: #fff;  
+}
+
+form input[type="reset"] {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form div {
+    margin-top: 20px;
+}

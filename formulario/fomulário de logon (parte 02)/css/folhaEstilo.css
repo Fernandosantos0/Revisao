@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url(../imagem/fundo.jpg);
+}
+
+/* Div que agrupar o formulário */
+#interface {
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    width: 400px;
+    height: 300px;
+    margin: 150px auto 0px;
+    background: rgba(255, 192, 203, 0.103);
+    /* Arredondamento dos cantos da borda */
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Icone da imagem do top do formulário */
+#interface img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -60px; /* Margin-top com a metade da altura da imagem */
+}
+
+/* Formatação geral para os campos do formulário */
+input {
+    width: 75%;
+    height: 35px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1em;
+    padding-left: 35px; /* Espaçamento interno para inserir a imagem de fundo */
+}
+
+/* O estado ao passa o cursor do mouse */
+input:hover {
+    border: 2px solid #000;
+}
+
+/* Campo e-mail */
+input[type="email"] { /* Para navegadores mais novos que suporta o seleto por atributo */
+    background: url(../imagem/icone-usuario.png) no-repeat;
+    background-position: 7px center;
+}
+
+input.email { /* Para os navegadores que não suporta o seleto por atributo */
+    background: url(../imagem/icone-usuario.png) no-repeat;
+    background-position: 7px center;
+}
+
+/* Campo senha */
+input[type="password"] {
+    background: url(../imagem/icone-cadeado.png) no-repeat;
+    background-position: 7px center;
+}
+
+input.senha {
+    background: url(../imagem/icone-cadeado.png) no-repeat;
+    background-position: 7px center;
+}
+
+/* Botão de envior */
+input[type="submit"] {
+    width: 90%;
+    height: 49px;
+    border-radius: 0px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+
+    /* Estilo degradê */
+    background: -moz-linear-gradient(60deg, rgb(221, 160, 48), rgb(230, 170, 59)); /* Para navegadores antigo da Mozilla Firefox */
+    background: -webkit-linear-gradient(60deg, rgb(221, 160, 48), rgb(230, 170, 59)); /* Para navegadores antigo do Google Chrome */
+    background: -o-linear-gradient(60deg, rgb(221, 160, 48), rgb(230, 170, 59)); /* Para outros navegadores antigo */
+    background: linear-gradient(60deg, rgb(221, 160, 48), rgb(230, 170, 59)); /* Para os navegadores modernos que suporta */
+}
+
+input.enviar {
+    width: 90%;
+    height: 49px;
+    border-radius: 0px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+
+    /* Estilo degradê */
+    background: -moz-linear-gradient(60deg, rgb(221, 160, 48), rgb(230, 170, 59)); /* Para navegadores antigo da Mozilla Firefox */
+    background: -webkit-linear-gradient(60deg, rgb(221, 160, 48), rgb(230, 170, 59)); /* Para navegadores antigo do Google Chrome */
+    background: -o-linear-gradient(60deg, rgb(221, 160, 48), rgb(230, 170, 59)); /* Para outros navegadores antigo */
+    background: linear-gradient(60deg, rgb(221, 160, 48), rgb(230, 170, 59)); /* Para os navegadores modernos que suporta */
+}

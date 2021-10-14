@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logon | Página para logar</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" sizes="512x512" href="imagem/favicon.png">
+        <!-- CSS Importado -->
+        <style>
+            @import url(css/folhaEstilo.css); /* Importando a folha de estilo externo */
+        </style>
+    </head> <!-- Cabeça -->
+    <body>
+       <div id="interface">
+
+            <img src="imagem/perfil.png" alt="Icone de um manequi representado uma pessoa">
+            <!-- <img src="imagem/fernando.jpg" alt=""> -->
+
+            <form action="script.php" method="POST" accept-charset="utf-8">
+
+                <input type="email" class="email" name="campoEmail" required id="txtEmail" placeholder="Digite seu e-mail"> <!-- Campo para a digitação do e-mail -->
+
+                <input type="password" class="senha" name="campoSenha" required id="txtSenha" max="39" min="9" pattern="" title="Crier uma senha forte de 9 até 39 caractere" placeholder="Digite sua senha"> <!-- Campo para digitação da senha -->
+
+                <input type="submit"  class="enviar" value="Logan">
+
+                <!-- <input type="image" src="imagem/seta-direita.png" nome="enviar-image"> -->
+
+            </form>
+       </div> <!-- div para agrupar o formulário com logon -->
+    </body> <!-- Corpo -->
+</html> <!-- Tag raiz -->

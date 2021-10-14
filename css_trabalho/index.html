@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Trabalhando com CSS Incorporado</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/png" sizes="720x720" href="https://www.maxpixel.net/static/photo/1x/Logo-Css3-Icon-Css-2582747.png">
+		<!-- CSS Incorporado -->
+		<style type="text/css" rel="stylesheet">
+			/* Seletor identificar com elemento você irá formata */
+
+			/* Carregando uma fonte baixada */
+			@font-face {
+				font-family: "Fonte Personalizada";
+				src: url(fontes/ALGER.TTF);
+			}
+
+			body {
+				background: #ddd;
+			}
+
+			h1 {
+				background: #d9d;
+				color: white;
+				font-family: "Fonte Personalizada";
+				text-align: center;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				text-shadow: 4px 5px 6px #000;
+				letter-spacing: 4px;
+				font-weight: 100;
+			}	
+
+			p {
+				color: blue;
+			}
+
+			a {
+				margin: 0 auto;
+				color: #55E6DD;
+			}
+
+			table {
+				table-layout: fixed;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>CSS Incorporado</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<a href="css_inline.html" target="_self" hreflang="pt-br">CSS Inline</a>
+
+		<!-- Tabela -->
+		<table border="1" width="70%">
+			<thead>
+				<tr>
+					<td>ID</td>
+					<td>Nome</td>
+					<td>Sobrenome</td>
+					<td>Idade</td>
+				</tr>
+			</thead <!-- Cabeçalho da tabela -->
+			<tbody>
+				<tr>
+					<td>01</td>
+					<td>Fernando</td>
+					<td>Santos</td>
+					<td>21 anos</td>
+				</tr>
+				<tr>
+					<td>02</td>
+					<td>Fernando</td>
+					<td>Santos</td>
+					<td>21 anos</td>
+				</tr>
+			</tbody>	
+		</table> <!-- Fim da tabela -->
+	</body>
+</html>

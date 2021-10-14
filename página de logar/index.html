@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Página de logan</title>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" sizes="512x512" type="image/png" href="imagens/favicon.png">
+		<!-- CSS Externo -->
+		<link rel="stylesheet" type="text/css" href="css/folhaEstilo.css">
+	</head>
+	<body>
+		<div id="conteine-logar">
+			<h1>Login</h1>
+			<!-- Formulário para o login -->
+			<form id="login" action="#" method="post" accept-charset="utf-8">
+				<div>
+					<label for="txtEmail">E-mail</label>
+					<input type="email" name="campoEmail" placeholder="Digite seu e-mail" id="txtEmail" required title="Esse campo é obrigatório o preenchemento!!!">
+				</div> <!-- Campo para a digitação de e-mail -->
+				<div class="linha-mais">
+					<label for="txtSenha">Senha:</label>
+					<input type="password" name="campoSenha" required maxlength="25" minlength="9" pattern="" title="Crier uma senha complexa de 9 a 25 caractere" placeholder="Digite sua senha">
+				</div> <!-- Campo para a digitação da senha -->
+				
+				<div id="link">
+					<a href="#" rel="next" target="_self" hreflang="pt-br">Esqueceu a senha?</a>
+				</div> 
+				
+				<div id="btns">
+					<input class="envio" type="submit" value="Login">
+					<input type="reset" value="Limpar">
+				</div>
+			</form> 
+			<!-- Fim do formulário de login -->
+		</div>
+	</body>
+</html>

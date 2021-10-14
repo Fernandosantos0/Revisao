@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* Google Fonts */
+
+/* Fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+ 
+/* ------------------------------------------------------------------------------------ */
+
+body {
+	font-size: 16px;
+}
+
+h2 {
+	text-align: center;
+}
+
+div#menu-navegacao {
+	width: 200px;
+}
+
+div#menu-navegacao ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+div#menu-navegacao li {
+	border-bottom: 1px solid #000;
+	background: orange url(../imagens/menu.png) no-repeat left center;
+	height: 40px;
+}
+
+div#menu-navegacao a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	font-weight: bolder;
+	margin-left: 29px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #61E5E5;
+}
+
+div#menu-navegacao a:hover {
+	color: green;
+}
+
+div#menu-navegacao li:hover {
+	background-position: right center;
+}
+
+/* Navegação Interligente */
+body#home div#menu-navegacao li#index a,
+body#sob div#menu-navegacao li#sobre a,
+body#hist div#menu-navegacao li#historia a,
+body#serv div#menu-navegacao li#servico a,
+body#cont div#menu-navegacao li#contato a {
+	color: green;
+}
+
+body#home div#menu-navegacao li#index,
+body#sob div#menu-navegacao li#sobre,
+body#hist div#menu-navegacao li#historia,
+body#serv div#menu-navegacao li#servico,
+body#cont div#menu-navegacao li#contato  {
+	background-position: right center;	
+}

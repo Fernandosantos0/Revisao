@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+ul {
+	border: 1px solid #000;
+	width: 316px;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	margin: 0;
+	padding: 15px 0px;
+	background: #128f92;
+	text-align: center;
+}
+
+ul li:hover {
+	background: white;
+}
+
+li a:hover {
+	color: #128f92;
+}
+
+li a {
+	color: white;
+	font-weight: bolder;
+	text-decoration: none;
+	font-size: 1.2em
+}
+
+/* Navegação Inteligente */
+#home #navegacao li.home, 
+#sobre #navegacao li.sobre,
+#servico #navegacao li.servico,
+#noticia #navegacao li.noticia,
+#contato #navegacao li.contato  {
+	color: #128f92;
+	background: white;
+}
+
+#home #navegacao li.home a, 
+#sobre #navegacao li.sobre a,
+#servico #navegacao li.servico a,
+#noticia #navegacao li.noticia a,
+#contato #navegacao li.contato a  {
+	color: #128f92;
+}
